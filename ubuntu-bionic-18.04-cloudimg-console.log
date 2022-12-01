@@ -50,7 +50,7 @@
 [    0.000000] NODE_DATA(0) allocated [mem 0x3ffc5000-0x3ffeffff]
 [    0.000000] kvm-clock: cpu 0, msr 0:3ff44001, primary cpu clock
 [    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
-[    0.000000] kvm-clock: using sched offset of 6953533720 cycles
+[    0.000000] kvm-clock: using sched offset of 4475416174 cycles
 [    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
 [    0.000000] Zone ranges:
 [    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
@@ -99,386 +99,390 @@
 [    0.004000] ACPI: 2 ACPI AML tables successfully acquired and loaded
 [    0.004000] APIC: Switch to symmetric I/O mode setup
 [    0.004000] x2apic enabled
-[    0.004013] Switched APIC routing to physical x2apic.
-[    0.011093] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
-[    0.012006] tsc: Detected 2400.002 MHz processor
-[    0.014170] Calibrating delay loop (skipped) preset value.. 4800.00 BogoMIPS (lpj=9600008)
-[    0.016007] pid_max: default: 32768 minimum: 301
-[    0.020073] Security Framework initialized
-[    0.024007] Yama: becoming mindful.
-[    0.026023] AppArmor: AppArmor initialized
-[    0.032061] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
-[    0.036118] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
-[    0.040029] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
-[    0.044019] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
-[    0.048622] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
-[    0.052005] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
-[    0.054605] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
-[    0.056004] Spectre V2 : Mitigation: Retpolines
-[    0.060004] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
-[    0.064003] Speculative Store Bypass: Vulnerable
-[    0.065713] MDS: Mitigation: Clear CPU buffers
-[    0.068004] MMIO Stale Data: Mitigation: Clear CPU buffers
-[    0.070166] SRBDS: Unknown: Dependent on hypervisor status
-[    0.072396] Freeing SMP alternatives memory: 36K
-[    0.186472] smpboot: CPU0: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz (family: 0x6, model: 0x9e, stepping: 0xa)
-[    0.188000] Performance Events: unsupported p6 CPU model 158 no PMU driver, software events only.
-[    0.188073] Hierarchical SRCU implementation.
-[    0.193015] NMI watchdog: Perf event create on CPU 0 failed with -2
-[    0.196005] NMI watchdog: Perf NMI watchdog permanently disabled
-[    0.200091] smp: Bringing up secondary CPUs ...
-[    0.202200] x86: Booting SMP configuration:
-[    0.204006] .... node  #0, CPUs:      #1
+[    0.004012] Switched APIC routing to physical x2apic.
+[    0.008000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.008008] tsc: Detected 2400.002 MHz processor
+[    0.010272] Calibrating delay loop (skipped) preset value.. 4800.00 BogoMIPS (lpj=9600008)
+[    0.012006] pid_max: default: 32768 minimum: 301
+[    0.016061] Security Framework initialized
+[    0.017885] Yama: becoming mindful.
+[    0.020040] AppArmor: AppArmor initialized
+[    0.024056] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.028082] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.030325] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.032009] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.034179] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.036004] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.037805] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.040005] Spectre V2 : Mitigation: Retpolines
+[    0.041242] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.044004] Speculative Store Bypass: Vulnerable
+[    0.045322] MDS: Mitigation: Clear CPU buffers
+[    0.046466] MMIO Stale Data: Mitigation: Clear CPU buffers
+[    0.048003] SRBDS: Unknown: Dependent on hypervisor status
+[    0.049555] Freeing SMP alternatives memory: 36K
+[    0.161458] smpboot: CPU0: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz (family: 0x6, model: 0x9e, stepping: 0xa)
+[    0.164177] Performance Events: unsupported p6 CPU model 158 no PMU driver, software events only.
+[    0.168072] Hierarchical SRCU implementation.
+[    0.172402] NMI watchdog: Perf event create on CPU 0 failed with -2
+[    0.175407] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.176093] smp: Bringing up secondary CPUs ...
+[    0.180167] x86: Booting SMP configuration:
+[    0.182147] .... node  #0, CPUs:      #1
 [    0.004000] kvm-clock: cpu 1, msr 0:3ff44041, secondary cpu clock
-[    0.212054] smp: Brought up 1 node, 2 CPUs
-[    0.213987] smpboot: Max logical packages: 1
-[    0.216012] smpboot: Total of 2 processors activated (9600.00 BogoMIPS)
-[    0.220188] devtmpfs: initialized
-[    0.221936] x86/mm: Memory block size: 128MB
-[    0.224380] evm: security.selinux
-[    0.226089] evm: security.SMACK64
-[    0.228007] evm: security.SMACK64EXEC
-[    0.230032] evm: security.SMACK64TRANSMUTE
-[    0.232007] evm: security.SMACK64MMAP
-[    0.233993] evm: security.apparmor
-[    0.236005] evm: security.ima
-[    0.237775] evm: security.capability
-[    0.240164] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
-[    0.244030] futex hash table entries: 512 (order: 3, 32768 bytes)
-[    0.246389] pinctrl core: initialized pinctrl subsystem
-[    0.252180] RTC time:  9:03:34, date: 11/28/22
-[    0.256469] NET: Registered protocol family 16
-[    0.258757] audit: initializing netlink subsys (disabled)
-[    0.260061] audit: type=2000 audit(1669626223.421:1): state=initialized audit_enabled=0 res=1
-[    0.268013] cpuidle: using governor ladder
-[    0.270153] cpuidle: using governor menu
-[    0.272000] ACPI: bus type PCI registered
-[    0.272007] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
-[    0.276212] PCI: Using configuration type 1 for base access
-[    0.284111] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
-[    0.288261] ACPI: Added _OSI(Module Device)
-[    0.290468] ACPI: Added _OSI(Processor Device)
-[    0.292020] ACPI: Added _OSI(3.0 _SCP Extensions)
-[    0.293517] ACPI: Added _OSI(Processor Aggregator Device)
-[    0.296017] ACPI: Added _OSI(Linux-Dell-Video)
-[    0.297385] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
-[    0.298728] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
-[    0.300376] ACPI: Executed 1 blocks of module-level executable AML code
-[    0.309649] ACPI: Interpreter enabled
-[    0.311512] ACPI: (supports S0 S5)
-[    0.312007] ACPI: Using IOAPIC for interrupt routing
-[    0.316669] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
-[    0.320582] ACPI: Enabled 2 GPEs in block 00 to 07
-[    0.342272] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
-[    0.344016] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
-[    0.349421] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
-[    0.352025] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
-[    0.360802] PCI host bridge to bus 0000:00
-[    0.362187] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
-[    0.364000] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
-[    0.364006] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
-[    0.368005] pci_bus 0000:00: root bus resource [mem 0x40000000-0xfdffffff window]
-[    0.372005] pci_bus 0000:00: root bus resource [bus 00-ff]
-[    0.376237] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
-[    0.378269] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
-[    0.379991] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
-[    0.380004] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
-[    0.406804] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
-[    0.408042] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
-[    0.426434] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
-[    0.428869] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
-[    0.432372] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
-[    0.436234] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
-[    0.440000] SCSI subsystem initialized
-[    0.440092] pci 0000:00:02.0: vgaarb: setting as boot VGA device
-[    0.443126] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
-[    0.444012] pci 0000:00:02.0: vgaarb: bridge control possible
-[    0.448006] vgaarb: loaded
-[    0.449546] ACPI: bus type USB registered
-[    0.452048] usbcore: registered new interface driver usbfs
-[    0.456029] usbcore: registered new interface driver hub
-[    0.458694] usbcore: registered new device driver usb
-[    0.460111] EDAC MC: Ver: 3.0.0
-[    0.464567] PCI: Using ACPI for IRQ routing
-[    0.466813] NetLabel: Initializing
-[    0.468007] NetLabel:  domain hash size = 128
-[    0.472005] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
-[    0.475139] NetLabel:  unlabeled traffic allowed by default
-[    0.476228] clocksource: Switched to clocksource kvm-clock
-[    0.513011] VFS: Disk quotas dquot_6.6.0
-[    0.514196] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
-[    0.516059] AppArmor: AppArmor Filesystem Enabled
-[    0.517709] pnp: PnP ACPI init
-[    0.520005] pnp: PnP ACPI: found 3 devices
-[    0.530318] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
-[    0.532603] NET: Registered protocol family 2
-[    0.533701] IP idents hash table entries: 16384 (order: 5, 131072 bytes)
-[    0.539369] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
-[    0.541816] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
-[    0.543682] TCP: Hash tables configured (established 8192 bind 8192)
-[    0.545425] UDP hash table entries: 512 (order: 2, 16384 bytes)
-[    0.546973] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
-[    0.548699] NET: Registered protocol family 1
-[    0.549953] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
-[    0.551664] pci 0000:00:01.0: Activating ISA DMA hang workarounds
-[    0.553459] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
-[    0.555993] Unpacking initramfs...
-[    1.185004] Freeing initrd memory: 19532K
-[    1.187288] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x22983938a92, max_idle_ns: 440795216168 ns
-[    1.192269] platform rtc_cmos: registered platform RTC device (no PNP device found)
-[    1.196166] Scanning for low memory corruption every 60 seconds
-[    1.200349] Initialise system trusted keyrings
-[    1.202598] Key type blacklist registered
-[    1.204957] workingset: timestamp_bits=36 max_order=18 bucket_order=0
-[    1.210489] zbud: loaded
-[    1.213158] squashfs: version 4.0 (2009/01/31) Phillip Lougher
-[    1.216426] fuse init (API version 7.26)
-[    1.223630] Key type asymmetric registered
-[    1.225977] Asymmetric key parser 'x509' registered
-[    1.228517] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
-[    1.232424] io scheduler noop registered
-[    1.234435] io scheduler deadline registered
-[    1.236541] io scheduler cfq registered (default)
-[    1.239533] ACPI: AC Adapter [AC] (off-line)
-[    1.242084] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
-[    1.245909] ACPI: Power Button [PWRF]
-[    1.248111] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
-[    1.251823] ACPI: Sleep Button [SLPF]
-[    1.256480] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
-[    1.257015] ACPI: Battery Slot [BAT0] (battery present)
-[    1.284527] 00:02: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
-[    1.291374] Linux agpgart interface v0.103
-[    1.301938] loop: module loaded
-[    1.304984] scsi host0: ata_piix
-[    1.307009] scsi host1: ata_piix
-[    1.308818] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
-[    1.312098] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
-[    1.315832] tun: Universal TUN/TAP device driver, 1.6
-[    1.318633] PPP generic driver version 2.4.2
-[    1.321206] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
-[    1.324352] ehci-pci: EHCI PCI platform driver
-[    1.326673] ehci-platform: EHCI generic platform driver
-[    1.329243] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
-[    1.332298] ohci-pci: OHCI PCI platform driver
-[    1.334811] ohci-platform: OHCI generic platform driver
-[    1.337434] uhci_hcd: USB Universal Host Controller Interface driver
-[    1.340630] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
-[    1.345924] serio: i8042 KBD port at 0x60,0x64 irq 1
-[    1.348384] serio: i8042 AUX port at 0x60,0x64 irq 12
-[    1.351190] mousedev: PS/2 mouse device common for all mice
-[    1.354810] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
-[    1.359976] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
-[    1.363199] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
-[    1.366348] i2c /dev entries driver
-[    1.368305] device-mapper: uevent: version 1.0.3
-[    1.370728] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
-[    1.375175] ledtrig-cpu: registered to indicate activity on CPUs
-[    1.379238] NET: Registered protocol family 10
-[    1.390054] Segment Routing with IPv6
-[    1.392347] NET: Registered protocol family 17
-[    1.394903] Key type dns_resolver registered
-[    1.397514] mce: Using 0 MCE banks
-[    1.399234] RAS: Correctable Errors collector initialized.
-[    1.402087] sched_clock: Marking stable (1402034449, 0)->(1801678097, -399643648)
-[    1.406969] registered taskstats version 1
-[    1.409166] Loading compiled-in X.509 certificates
-[    1.416712] Loaded X.509 cert 'Build time autogenerated kernel key: ffc9dd3886e7b6bb89620497cc57c4262b59bc54'
-[    1.422442] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
-[    1.428196] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
-[    1.433012] blacklist: Loading compiled-in revocation X.509 certificates
-[    1.435512] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
-[    1.439555] zswap: loaded using pool lzo/zbud
-[    1.449657] Key type big_key registered
-[    1.451636] Key type trusted registered
-[    1.457857] Key type encrypted registered
-[    1.460195] AppArmor: AppArmor sha1 policy hashing enabled
-[    1.463083] ima: No TPM chip found, activating TPM-bypass! (rc=-19)
-[    1.466181] ima: Allocated hash algorithm: sha1
-[    1.468504] evm: HMAC attrs: 0x1
-[    1.470718]   Magic number: 14:601:71
-[    1.472804] rtc_cmos rtc_cmos: setting system clock to 2022-11-28 09:03:35 UTC (1669626215)
-[    1.504770] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
-[    1.507618] EDD information not available.
-[    1.514612] Freeing unused kernel image memory: 2472K
-[    1.528658] Write protecting the kernel read-only data: 20480k
-[    1.532765] Freeing unused kernel image memory: 2008K
-[    1.535893] Freeing unused kernel image memory: 1824K
-[    1.557455] x86/mm: Checked W+X mappings: passed, no W+X pages found.
-[    1.560643] x86/mm: Checking user space page tables
-[    1.581538] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    0.188024] smp: Brought up 1 node, 2 CPUs
+[    0.189425] smpboot: Max logical packages: 1
+[    0.192006] smpboot: Total of 2 processors activated (9600.00 BogoMIPS)
+[    0.194149] devtmpfs: initialized
+[    0.194149] x86/mm: Memory block size: 128MB
+[    0.196176] evm: security.selinux
+[    0.197032] evm: security.SMACK64
+[    0.197906] evm: security.SMACK64EXEC
+[    0.200004] evm: security.SMACK64TRANSMUTE
+[    0.201015] evm: security.SMACK64MMAP
+[    0.201992] evm: security.apparmor
+[    0.203004] evm: security.ima
+[    0.203794] evm: security.capability
+[    0.204086] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.206833] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.208063] pinctrl core: initialized pinctrl subsystem
+[    0.212134] RTC time:  4:02:23, date: 12/01/22
+[    0.216186] NET: Registered protocol family 16
+[    0.217461] audit: initializing netlink subsys (disabled)
+[    0.219037] audit: type=2000 audit(1669867350.164:1): state=initialized audit_enabled=0 res=1
+[    0.220017] cpuidle: using governor ladder
+[    0.221346] cpuidle: using governor menu
+[    0.224056] ACPI: bus type PCI registered
+[    0.225205] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.227162] PCI: Using configuration type 1 for base access
+[    0.229617] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.232182] ACPI: Added _OSI(Module Device)
+[    0.233621] ACPI: Added _OSI(Processor Device)
+[    0.236005] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.237786] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.240012] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.241717] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.244015] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.246537] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.256491] ACPI: Interpreter enabled
+[    0.257864] ACPI: (supports S0 S5)
+[    0.259262] ACPI: Using IOAPIC for interrupt routing
+[    0.260464] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.264321] ACPI: Enabled 2 GPEs in block 00 to 07
+[    0.280770] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.282942] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+[    0.285009] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    0.288027] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    0.292820] PCI host bridge to bus 0000:00
+[    0.296007] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.298425] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.300006] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.304009] pci_bus 0000:00: root bus resource [mem 0x40000000-0xfdffffff window]
+[    0.308006] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.315093] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.316007] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.320008] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.324008] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.355912] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+[    0.356043] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+[    0.375211] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+[    0.376919] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+[    0.380310] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+[    0.384359] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+[    0.388805] SCSI subsystem initialized
+[    0.392167] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.394950] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.396013] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.400007] vgaarb: loaded
+[    0.404087] ACPI: bus type USB registered
+[    0.408059] usbcore: registered new interface driver usbfs
+[    0.412032] usbcore: registered new interface driver hub
+[    0.415435] usbcore: registered new device driver usb
+[    0.416151] EDAC MC: Ver: 3.0.0
+[    0.420644] PCI: Using ACPI for IRQ routing
+[    0.424797] NetLabel: Initializing
+[    0.428035] NetLabel:  domain hash size = 128
+[    0.430891] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.432053] NetLabel:  unlabeled traffic allowed by default
+[    0.436195] clocksource: Switched to clocksource kvm-clock
+[    0.487637] VFS: Disk quotas dquot_6.6.0
+[    0.490307] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.494582] AppArmor: AppArmor Filesystem Enabled
+[    0.497587] pnp: PnP ACPI init
+[    0.503224] pnp: PnP ACPI: found 3 devices
+[    0.521586] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.525204] NET: Registered protocol family 2
+[    0.527011] IP idents hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.534066] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.536426] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+[    0.539564] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.541945] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.544435] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.547442] NET: Registered protocol family 1
+[    0.549495] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.552234] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.555087] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.558811] Unpacking initramfs...
+[    1.137381] Freeing initrd memory: 19532K
+[    1.140778] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x22983938a92, max_idle_ns: 440795216168 ns
+[    1.148352] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    1.154097] Scanning for low memory corruption every 60 seconds
+[    1.160690] Initialise system trusted keyrings
+[    1.163483] Key type blacklist registered
+[    1.166143] workingset: timestamp_bits=36 max_order=18 bucket_order=0
+[    1.172730] zbud: loaded
+[    1.175291] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.178197] fuse init (API version 7.26)
+[    1.182797] Key type asymmetric registered
+[    1.184431] Asymmetric key parser 'x509' registered
+[    1.186073] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    1.188635] io scheduler noop registered
+[    1.189831] io scheduler deadline registered
+[    1.191624] io scheduler cfq registered (default)
+[    1.194097] ACPI: AC Adapter [AC] (off-line)
+[    1.195931] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    1.198940] ACPI: Power Button [PWRF]
+[    1.200545] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[    1.203110] ACPI: Sleep Button [SLPF]
+[    1.205648] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    1.207474] ACPI: Battery Slot [BAT0] (battery present)
+[    1.231378] 00:02: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    1.238526] Linux agpgart interface v0.103
+[    1.249116] loop: module loaded
+[    1.252089] scsi host0: ata_piix
+[    1.254122] scsi host1: ata_piix
+[    1.255893] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+[    1.259164] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+[    1.263027] tun: Universal TUN/TAP device driver, 1.6
+[    1.265817] PPP generic driver version 2.4.2
+[    1.268076] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.271536] ehci-pci: EHCI PCI platform driver
+[    1.273801] ehci-platform: EHCI generic platform driver
+[    1.276447] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.279417] ohci-pci: OHCI PCI platform driver
+[    1.281649] ohci-platform: OHCI generic platform driver
+[    1.284133] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.287281] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[    1.292284] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.294782] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    1.297573] mousedev: PS/2 mouse device common for all mice
+[    1.301064] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[    1.306152] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+[    1.309362] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+[    1.312800] i2c /dev entries driver
+[    1.314771] device-mapper: uevent: version 1.0.3
+[    1.317405] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+[    1.321728] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.325590] NET: Registered protocol family 10
+[    1.335746] Segment Routing with IPv6
+[    1.337714] NET: Registered protocol family 17
+[    1.339927] Key type dns_resolver registered
+[    1.342420] mce: Using 0 MCE banks
+[    1.344265] RAS: Correctable Errors collector initialized.
+[    1.347129] sched_clock: Marking stable (1347074611, 0)->(1631870443, -284795832)
+[    1.352088] registered taskstats version 1
+[    1.354175] Loading compiled-in X.509 certificates
+[    1.361621] Loaded X.509 cert 'Build time autogenerated kernel key: ffc9dd3886e7b6bb89620497cc57c4262b59bc54'
+[    1.367452] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.373589] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.378588] blacklist: Loading compiled-in revocation X.509 certificates
+[    1.381854] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.386704] zswap: loaded using pool lzo/zbud
+[    1.396479] Key type big_key registered
+[    1.398089] Key type trusted registered
+[    1.402415] Key type encrypted registered
+[    1.404203] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.406060] ima: No TPM chip found, activating TPM-bypass! (rc=-19)
+[    1.407998] ima: Allocated hash algorithm: sha1
+[    1.409647] evm: HMAC attrs: 0x1
+[    1.411773]   Magic number: 2:494:8
+[    1.413567] rtc_cmos rtc_cmos: setting system clock to 2022-12-01 04:02:25 UTC (1669867345)
+[    1.417416] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    1.420080] EDD information not available.
+[    1.452122] Freeing unused kernel image memory: 2472K
+[    2.194667] Write protecting the kernel read-only data: 20480k
+[    2.201828] Freeing unused kernel image memory: 2008K
+[    2.207215] Freeing unused kernel image memory: 1824K
+[    2.247239] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    2.253137] x86/mm: Checking user space page tables
+[    2.291044] x86/mm: Checked W+X mappings: passed, no W+X pages found.
 Loading, please wait...
 starting version 237
-[    1.705276] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
-[    1.708165] e1000: Copyright (c) 1999-2006 Intel Corporation.
-[    1.719351] Fusion MPT base driver 3.04.20
-[    1.721032] Copyright (c) 1999-2008 LSI Corporation
-[    1.747726] AVX2 version of gcm_enc/dec engaged.
-[    1.749733] AES CTR mode by8 optimization enabled
-[    1.757435] Fusion MPT SPI Host driver 3.04.20
-[    1.928494] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
-[    2.252474] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 02:1d:bb:88:d1:cb
-[    2.255826] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
-[    2.261666] mptbase: ioc0: Initiating bringup
-[    2.263868] e1000 0000:00:03.0 enp0s3: renamed from eth0
-[    2.377286] ioc0: LSI53C1030 A0: Capabilities={Initiator}
-[    2.625180] scsi host2: ioc0: LSI53C1030 A0, FwRev=00000000h, Ports=1, MaxQ=256, IRQ=20
-[    2.796558] scsi 2:0:0:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
-[    2.828349] scsi target2:0:0: Beginning Domain Validation
-[    2.833139] scsi target2:0:0: Domain Validation skipping write tests
-[    2.834847] scsi target2:0:0: Ending Domain Validation
-[    2.836356] scsi target2:0:0: asynchronous
-[    2.838842] scsi 2:0:1:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
-[    2.872090] scsi target2:0:1: Beginning Domain Validation
-[    2.882913] scsi target2:0:1: Domain Validation skipping write tests
-[    2.888538] scsi target2:0:1: Ending Domain Validation
-[    2.893903] scsi target2:0:1: asynchronous
-[    2.918106] sd 2:0:0:0: Attached scsi generic sg0 type 0
-[    2.918960] sd 2:0:0:0: [sda] 83886080 512-byte logical blocks: (42.9 GB/40.0 GiB)
-[    2.934777] sd 2:0:0:0: [sda] Write Protect is off
-[    2.940663] sd 2:0:0:0: [sda] Incomplete mode parameter data
-[    2.940784] sd 2:0:1:0: Attached scsi generic sg1 type 0
-[    2.946225] sd 2:0:0:0: [sda] Assuming drive cache: write through
-[    2.956571] sd 2:0:1:0: [sdb] 20480 512-byte logical blocks: (10.5 MB/10.0 MiB)
-[    2.963393] sd 2:0:1:0: [sdb] Write Protect is off
-[    2.968258] sd 2:0:1:0: [sdb] Incomplete mode parameter data
-[    2.971394] sd 2:0:1:0: [sdb] Assuming drive cache: write through
-[    2.976546]  sda: sda1
-[    2.979382] sd 2:0:0:0: [sda] Attached SCSI disk
-[    2.997133] sd 2:0:1:0: [sdb] Attached SCSI disk
-Begin: Loading essential drivers ... [    5.072046] raid6: sse2x1   gen()  6494 MB/s
-[    5.120545] raid6: sse2x1   xor()  3505 MB/s
-[    5.168385] raid6: sse2x2   gen()  5817 MB/s
-[    5.216069] raid6: sse2x2   xor()  4469 MB/s
-[    5.264602] raid6: sse2x4   gen()  7139 MB/s
-[    5.312329] raid6: sse2x4   xor()  4404 MB/s
-[    5.360197] raid6: avx2x1   gen()  9605 MB/s
-[    5.408560] raid6: avx2x1   xor() 10475 MB/s
-[    5.456454] raid6: avx2x2   gen() 18785 MB/s
-[    5.504211] raid6: avx2x2   xor()  7169 MB/s
-[    5.552031] raid6: avx2x4   gen() 13273 MB/s
-[    5.600442] raid6: avx2x4   xor()  8012 MB/s
-[    5.602658] raid6: using algorithm avx2x2 gen() 18785 MB/s
-[    5.605510] raid6: .... xor() 7169 MB/s, rmw enabled
-[    5.608077] raid6: using avx2x2 recovery algorithm
-[    5.613577] xor: automatically using best checksumming function   avx       
-[    5.619932] async_tx: api initialized (async)
+[    2.508855] Fusion MPT base driver 3.04.20
+[    2.508860] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    2.980136] Copyright (c) 1999-2008 LSI Corporation
+[    2.985033] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    3.031394] AVX2 version of gcm_enc/dec engaged.
+[    3.032947] AES CTR mode by8 optimization enabled
+[    3.035366] Fusion MPT SPI Host driver 3.04.20
+[    3.199828] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+[    3.481686] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 02:1d:bb:88:d1:cb
+[    3.487539] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[    3.498833] e1000 0000:00:03.0 enp0s3: renamed from eth0
+[    3.499250] mptbase: ioc0: Initiating bringup
+[    4.246261] ioc0: LSI53C1030 A0: Capabilities={Initiator}
+[    8.166146] scsi host2: ioc0: LSI53C1030 A0, FwRev=00000000h, Ports=1, MaxQ=256, IRQ=20
+[   10.161362] scsi 2:0:0:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
+[   10.203187] scsi target2:0:0: Beginning Domain Validation
+[   10.215002] scsi target2:0:0: Domain Validation skipping write tests
+[   10.221032] scsi target2:0:0: Ending Domain Validation
+[   10.226535] scsi target2:0:0: asynchronous
+[   10.233303] scsi 2:0:1:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
+[   10.358317] scsi target2:0:1: Beginning Domain Validation
+[   10.365420] scsi target2:0:1: Domain Validation skipping write tests
+[   10.368433] scsi target2:0:1: Ending Domain Validation
+[   10.371219] scsi target2:0:1: asynchronous
+[   10.381699] sd 2:0:0:0: [sda] 83886080 512-byte logical blocks: (42.9 GB/40.0 GiB)
+[   10.384590] sd 2:0:0:0: Attached scsi generic sg0 type 0
+[   10.386011] sd 2:0:0:0: [sda] Write Protect is off
+[   10.395195] sd 2:0:0:0: [sda] Incomplete mode parameter data
+[   10.398130] sd 2:0:0:0: [sda] Assuming drive cache: write through
+[   10.400102] sd 2:0:1:0: Attached scsi generic sg1 type 0
+[   10.404213] sd 2:0:1:0: [sdb] 20480 512-byte logical blocks: (10.5 MB/10.0 MiB)
+[   10.409700] sd 2:0:1:0: [sdb] Write Protect is off
+[   10.412596] sd 2:0:1:0: [sdb] Incomplete mode parameter data
+[   10.415349] sd 2:0:1:0: [sdb] Assuming drive cache: write through
+[   11.200588]  sda: sda1
+[   11.207322] sd 2:0:0:0: [sda] Attached SCSI disk
+[   11.215557] sd 2:0:1:0: [sdb] Attached SCSI disk
+Begin: Loading essential drivers ... [   13.936607] raid6: sse2x1   gen()  4912 MB/s
+[   13.984304] raid6: sse2x1   xor()  3444 MB/s
+[   14.032068] raid6: sse2x2   gen() 10854 MB/s
+[   14.080991] raid6: sse2x2   xor()  8238 MB/s
+[   14.128730] raid6: sse2x4   gen()  6873 MB/s
+[   14.176567] raid6: sse2x4   xor()  4304 MB/s
+[   14.224435] raid6: avx2x1   gen()  9604 MB/s
+[   14.272201] raid6: avx2x1   xor()  6760 MB/s
+[   14.320049] raid6: avx2x2   gen() 11804 MB/s
+[   14.368854] raid6: avx2x2   xor()  7405 MB/s
+[   14.416340] raid6: avx2x4   gen() 13278 MB/s
+[   14.464250] raid6: avx2x4   xor()  7722 MB/s
+[   14.466610] raid6: using algorithm avx2x4 gen() 13278 MB/s
+[   14.469090] raid6: .... xor() 7722 MB/s, rmw enabled
+[   14.471126] raid6: using avx2x2 recovery algorithm
+[   14.475763] xor: automatically using best checksumming function   avx       
+[   14.480771] async_tx: api initialized (async)
 done.
 Begin: Running /scripts/init-premount ... done.
 Begin: Mounting root file system ... Begin: Running /scripts/local-top ... done.
-Begin: Running /scripts/local-premount ... [    5.724471] Btrfs loaded, crc32c=crc32c-intel
+Begin: Running /scripts/local-premount ... [   14.552314] Btrfs loaded, crc32c=crc32c-intel
 Scanning for Btrfs filesystems
 done.
 Warning: fsck not present, so skipping root file system
-[    5.822434] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[   14.592498] EXT4-fs (sda1): INFO: recovery required on readonly filesystem
+[   14.594958] EXT4-fs (sda1): write access will be enabled during recovery
+[   14.773456] EXT4-fs (sda1): recovery complete
+[   14.776813] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
 done.
 Begin: Running /scripts/local-bottom ... done.
 Begin: Running /scripts/init-bottom ... done.
-[    7.695749] ip_tables: (C) 2000-2006 Netfilter Core Team
-[    7.773877] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
-[    7.791690] systemd[1]: Detected virtualization oracle.
-[    7.796898] systemd[1]: Detected architecture x86-64.
+[   15.574009] ip_tables: (C) 2000-2006 Netfilter Core Team
+[   15.610202] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[   15.615904] systemd[1]: Detected virtualization oracle.
+[   15.617316] systemd[1]: Detected architecture x86-64.
 
 Welcome to [1mUbuntu 18.04.6 LTS[0m!
 
-[    7.844155] systemd[1]: Set hostname to <ubuntu>.
-[    7.877890] systemd[1]: Initializing machine ID from random generator.
-[    7.881214] systemd[1]: Installed transient /etc/machine-id file.
-[    9.250589] systemd[1]: Reached target User and Group Name Lookups.
-[[0;32m  OK  [0m] Reached target User and Group Name Lookups.
-[    9.258767] systemd[1]: Created slice User and Session Slice.
-[[0;32m  OK  [0m] Created slice User and Session Slice.
-[    9.263517] systemd[1]: Created slice System Slice.
-[[0;32m  OK  [0m] Created slice System Slice.
-[    9.637778] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
-[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
-[[0;32m  OK  [0m] Listening on fsck to fsckd communication Socket.
-[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
-[[0;32m  OK  [0m] Set up automount Arbitrary Executab…rmats File System Automount Point.
-[[0;32m  OK  [0m] Reached target Swap.
-[[0;32m  OK  [0m] Started Forward Password Requests to Wall Directory Watch.
-[[0;32m  OK  [0m] Listening on Journal Socket.
-         Mounting Kernel Debug File System...
-         Starting File System Check on Root Device...
-         Starting Set the console keyboard layout...
-         Starting Uncomplicated firewall...
-[[0;32m  OK  [0m] Reached target Slices.
-         Starting Load Kernel Modules...
-         Starting Create list of required st…ce nodes for the current kernel...
-[[0;32m  OK  [0m] Listening on LVM2 poll daemon socket.
-         Mounting Huge Pages File System...
-[[0;32m  OK  [0m] Listening on Syslog Socket.
+[   16.089086] systemd[1]: Set hostname to <ubuntu-bionic>.
+[   17.892632] systemd[1]: Reached target System Time Synchronized.
 [[0;32m  OK  [0m] Reached target System Time Synchronized.
-[[0;32m  OK  [0m] Listening on udev Control Socket.
-[[0;32m  OK  [0m] Listening on LVM2 metadata daemon socket.
-[[0;32m  OK  [0m] Listening on Journal Audit Socket.
-         Starting Journal Service...
-         Mounting POSIX Message Queue File System...
-[[0;32m  OK  [0m] Listening on Network Service Netlink Socket.
-[[0;32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+[   18.176534] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Started Forward Password Requests to Wall Directory Watch.
+[   18.194975] systemd[1]: Created slice User and Session Slice.
+[[0;32m  OK  [0m] Created slice User and Session Slice.
+[   18.203904] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[[0;32m  OK  [0m] Set up automount Arbitrary Executab…rmats File System Automount Point.
+[   18.216508] systemd[1]: Reached target User and Group Name Lookups.
+[[0;32m  OK  [0m] Reached target User and Group Name Lookups.
+[   18.329750] systemd[1]: Reached target Swap.
+[[0;32m  OK  [0m] Reached target Swap.
+[[0;32m  OK  [0m] Created slice System Slice.
+[[0;32m  OK  [0m] Listening on Journal Socket.
+[[0;32m  OK  [0m] Listening on LVM2 poll daemon socket.
 [[0;32m  OK  [0m] Listening on udev Kernel Socket.
-         Starting udev Coldplug all Devices...
 [[0;32m  OK  [0m] Listening on Device-mapper event daemon FIFOs.
+[[0;32m  OK  [0m] Listening on Syslog Socket.
+         Mounting Huge Pages File System...
+[[0;32m  OK  [0m] Listening on Journal Audit Socket.
+[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
+         Starting Journal Service...
+[[0;32m  OK  [0m] Listening on udev Control Socket.
+         Starting Load Kernel Modules...
+[[0;32m  OK  [0m] Listening on LVM2 metadata daemon socket.
          Starting Monitoring of LVM2 mirrors…ng dmeventd or progress polling...
-[[0;32m  OK  [0m] Mounted Kernel Debug File System.
-[[0;32m  OK  [0m] Started File System Check on Root Device.
-[[0;32m  OK  [0m] Started Uncomplicated firewall.
-[[0;32m  OK  [0m] Started Create list of required sta…vice nodes for the current kernel.
+[[0;32m  OK  [0m] Reached target Slices.
+         Starting Uncomplicated firewall...
+         Starting udev Coldplug all Devices...
+[[0;32m  OK  [0m] Listening on Network Service Netlink Socket.
+         Starting Set the console keyboard layout...
+         Mounting Kernel Debug File System...
+         Mounting POSIX Message Queue File System...
+[[0;32m  OK  [0m] Listening on fsck to fsckd communication Socket.
+[   20.356324] Loading iSCSI transport class v2.0-870.
+[   20.370157] iscsi: registered transport (tcp)
+[   21.243717] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[[0;32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+[   21.331169] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+[   21.351020] systemd[1]: Starting File System Check on Root Device...
+         Starting File System Check on Root Device...
+[   21.358281] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+         Starting Create list of required st…ce nodes for the current kernel...
+[   21.374985] systemd[1]: Started Journal Service.
+[[0;32m  OK  [0m] Started Journal Service.
 [[0;32m  OK  [0m] Mounted Huge Pages File System.
+[[0;32m  OK  [0m] Started Uncomplicated firewall.
+[[0;32m  OK  [0m] Mounted Kernel Debug File System.
 [[0;32m  OK  [0m] Mounted POSIX Message Queue File System.
 [[0;32m  OK  [0m] Started File System Check Daemon to report status.
-         Starting Create Static Device Nodes in /dev...
-         Starting Remount Root and Kernel File Systems...
-[   10.408970] Loading iSCSI transport class v2.0-870.
-[[0;32m  OK  [0m] Started udev Coldplug all Devices.
-[[0;32m  OK  [0m] Started Journal Service.
-[   10.804245] EXT4-fs (sda1): re-mounted. Opts: (null)
-[[0;32m  OK  [0m] Started Remount Root and Kernel File Systems.
-[   10.867288] iscsi: registered transport (tcp)
-         Starting Flush Journal to Persistent Storage...
-         Starting Load/Save Random Seed...
-[[0;32m  OK  [0m] Started Create Static Device Nodes in /dev.
-         Starting udev Kernel Device Manager...
-[   10.938205] systemd-journald[420]: Received request to flush runtime journal from PID 1
-[[0;32m  OK  [0m] Started Load/Save Random Seed.
 [[0;32m  OK  [0m] Started LVM2 metadata daemon.
-[[0;32m  OK  [0m] Started Flush Journal to Persistent Storage.
-[[0;32m  OK  [0m] Started Monitoring of LVM2 mirrors,…sing dmeventd or progress polling.
-[[0;32m  OK  [0m] Started udev Kernel Device Manager.
-[   11.384392] iscsi: registered transport (iser)
+[[0;32m  OK  [0m] Started Create list of required sta…vice nodes for the current kernel.
+[[0;32m  OK  [0m] Started udev Coldplug all Devices.
+         Starting Create Static Device Nodes in /dev...
+[   21.546128] iscsi: registered transport (iser)
 [[0;32m  OK  [0m] Started Load Kernel Modules.
          Mounting FUSE Control File System...
          Mounting Kernel Configuration File System...
          Starting Apply Kernel Variables...
 [[0;32m  OK  [0m] Mounted FUSE Control File System.
 [[0;32m  OK  [0m] Mounted Kernel Configuration File System.
+[[0;32m  OK  [0m] Started File System Check on Root Device.
+         Starting Remount Root and Kernel File Systems...
+[[0;32m  OK  [0m] Started Monitoring of LVM2 mirrors,…sing dmeventd or progress polling.
 [[0;32m  OK  [0m] Started Apply Kernel Variables.
-[[0;32m  OK  [0m] Found device /dev/ttyS0.
-[[0;32m  OK  [0m] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
-         Mounting Arbitrary Executable File Formats File System...
-[[0;32m  OK  [0m] Mounted Arbitrary Executable File Formats File System.
+[[0;32m  OK  [0m] Started Remount Root and Kernel File Systems.
+         Starting Flush Journal to Persistent Storage...
+         Starting Load/Save Random Seed...
+[[0;32m  OK  [0m] Started Load/Save Random Seed.
+[[0;32m  OK  [0m] Started Create Static Device Nodes in /dev.
+         Starting udev Kernel Device Manager...
+[[0;32m  OK  [0m] Started udev Kernel Device Manager.
 [[0;32m  OK  [0m] Started Set the console keyboard layout.
 [[0;32m  OK  [0m] Reached target Local File Systems (Pre).
 [[0;32m  OK  [0m] Reached target Local File Systems.
          Starting ebtables ruleset management...
          Starting Tell Plymouth To Write Out Runtime Data...
-         Starting Create Volatile Files and Directories...
-         Starting AppArmor initialization...
          Starting Set console font and keymap...
-         Starting Commit a transient machine-id on disk...
+         Starting AppArmor initialization...
 [[0;32m  OK  [0m] Started Dispatch Password Requests to Console Directory Watch.
 [[0;32m  OK  [0m] Reached target Local Encrypted Volumes.
+[[0;32m  OK  [0m] Started Flush Journal to Persistent Storage.
+         Starting Create Volatile Files and Directories...
 [[0;32m  OK  [0m] Started Tell Plymouth To Write Out Runtime Data.
+[[0;32m  OK  [0m] Started Set console font and keymap.
 [[0;32m  OK  [0m] Started Create Volatile Files and Directories.
          Starting Update UTMP about System Boot/Shutdown...
 [[0;32m  OK  [0m] Started Update UTMP about System Boot/Shutdown.
-[[0;32m  OK  [0m] Started Commit a transient machine-id on disk.
 [[0;32m  OK  [0m] Started ebtables ruleset management.
-[[0;32m  OK  [0m] Started Set console font and keymap.
+[[0;32m  OK  [0m] Found device /dev/ttyS0.
+[[0;32m  OK  [0m] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
 [[0;32m  OK  [0m] Started AppArmor initialization.
-         Starting Initial cloud-init job (pre-networking)...
          Starting Load AppArmor profiles managed internally by snapd...
+         Starting Initial cloud-init job (pre-networking)...
+         Mounting Arbitrary Executable File Formats File System...
+[[0;32m  OK  [0m] Mounted Arbitrary Executable File Formats File System.
 [[0;32m  OK  [0m] Started Load AppArmor profiles managed internally by snapd.
-[   24.664903] cloud-init[859]: Cloud-init v. 22.3.4-0ubuntu1~18.04.1 running 'init-local' at Mon, 28 Nov 2022 09:03:57 +0000. Up 23.56 seconds.
+[   30.086654] cloud-init[558]: Cloud-init v. 22.3.4-0ubuntu1~18.04.1 running 'init-local' at Thu, 01 Dec 2022 04:02:53 +0000. Up 29.30 seconds.
 [[0;32m  OK  [0m] Started Initial cloud-init job (pre-networking).
 [[0;32m  OK  [0m] Reached target Network (Pre).
          Starting Network Service...
@@ -486,187 +490,116 @@ Welcome to [1mUbuntu 18.04.6 LTS[0m!
          Starting Wait for Network to be Configured...
          Starting Network Name Resolution...
 [[0;32m  OK  [0m] Started Network Name Resolution.
-[[0;32m  OK  [0m] Reached target Host and Network Name Lookups.
 [[0;32m  OK  [0m] Reached target Network.
+[[0;32m  OK  [0m] Reached target Host and Network Name Lookups.
 [[0;32m  OK  [0m] Started Wait for Network to be Configured.
          Starting Initial cloud-init job (metadata service crawler)...
-[   27.814429] cloud-init[992]: Cloud-init v. 22.3.4-0ubuntu1~18.04.1 running 'init' at Mon, 28 Nov 2022 09:04:01 +0000. Up 27.30 seconds.
-[   27.824246] cloud-init[992]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
-[   27.825331] cloud-init[992]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
-[   27.826564] cloud-init[992]: ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
-[   27.828171] cloud-init[992]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
-[   27.840366] cloud-init[992]: ci-info: | enp0s3 | True |         10.0.2.15          | 255.255.255.0 | global | 02:1d:bb:88:d1:cb |
-[   27.853184] cloud-init[992]: ci-info: | enp0s3 | True | fe80::1d:bbff:fe88:d1cb/64 |       .       |  link  | 02:1d:bb:88:d1:cb |
-[   27.855371] cloud-init[992]: ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
-[   27.868207] cloud-init[992]: ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
-[   27.870355] cloud-init[992]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
-[   27.880324] cloud-init[992]: ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
-[   27.896406] cloud-init[992]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
-[   27.912355] cloud-init[992]: ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
-[   27.924433] cloud-init[992]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
-[   27.936381] cloud-init[992]: ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |   enp0s3  |   UG  |
-[   27.952737] cloud-init[992]: ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |   enp0s3  |   U   |
-[   27.964387] cloud-init[992]: ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |   enp0s3  |   UH  |
-[   27.966649] cloud-init[992]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
-[   27.968976] cloud-init[992]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
-[   27.970924] cloud-init[992]: ci-info: +-------+-------------+---------+-----------+-------+
-[   27.980376] cloud-init[992]: ci-info: | Route | Destination | Gateway | Interface | Flags |
-[   27.992910] cloud-init[992]: ci-info: +-------+-------------+---------+-----------+-------+
-[   27.994835] cloud-init[992]: ci-info: |   1   |  fe80::/64  |    ::   |   enp0s3  |   U   |
-[   27.997187] cloud-init[992]: ci-info: |   3   |    local    |    ::   |   enp0s3  |   U   |
-[   27.999056] cloud-init[992]: ci-info: |   4   |   ff00::/8  |    ::   |   enp0s3  |   U   |
-[   28.000975] cloud-init[992]: ci-info: +-------+-------------+---------+-----------+-------+
-[   30.690451] cloud-init[992]: Generating public/private rsa key pair.
-[   30.700309] cloud-init[992]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
-[   30.712358] cloud-init[992]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
-[   30.724258] cloud-init[992]: The key fingerprint is:
-[   30.725515] cloud-init[992]: SHA256:paHOO01VE1kJKSPyyUqRxViotojTr54RBqOT88QomH4 root@ubuntu-bionic
-[   30.727325] cloud-init[992]: The key's randomart image is:
-[   30.728691] cloud-init[992]: +---[RSA 2048]----+
-[   30.729877] cloud-init[992]: |       Bo   o*.. |
-[   30.736334] cloud-init[992]: |      * o o = .  |
-[   30.737490] cloud-init[992]: |o    . =.o.+ .   |
-[   30.738649] cloud-init[992]: |oB  o ..++.      |
-[   30.739659] cloud-init[992]: |Xo=o o..S.       |
-[   30.744288] cloud-init[992]: |=*o..o. .        |
-[   30.752339] cloud-init[992]: | ooE  oo         |
-[   30.753869] cloud-init[992]: |  .o. ...        |
-[   30.755327] cloud-init[992]: | .+.  ..         |
-[   30.756847] cloud-init[992]: +----[SHA256]-----+
-[   30.758129] cloud-init[992]: Generating public/private dsa key pair.
-[   30.759544] cloud-init[992]: Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
-[   30.761305] cloud-init[992]: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
-[   30.763523] cloud-init[992]: The key fingerprint is:
-[   30.764743] cloud-init[992]: SHA256:hFSbFXITT4hSNZCisa23vwFtXeueuQXvYGeH9VSMIMM root@ubuntu-bionic
-[   30.766532] cloud-init[992]: The key's randomart image is:
-[   30.767469] cloud-init[992]: +---[DSA 1024]----+
-[   30.780933] cloud-init[992]: |      .o=*@+o    |
-[   30.782517] cloud-init[992]: |    ..o.o*EB . o |
-[   30.784141] cloud-init[992]: |     =.o+   o . o|
-[   30.785704] cloud-init[992]: |    o .o . . .  .|
-[   30.787251] cloud-init[992]: |     .. S . o   o|
-[   30.788908] cloud-init[992]: |    . .o   . o +.|
-[   30.790520] cloud-init[992]: |     . ..   + * o|
-[   30.792254] cloud-init[992]: |      .  . o O . |
-[   30.793887] cloud-init[992]: |       .o.  =..  |
-[   30.795960] cloud-init[992]: +----[SHA256]-----+
-[   30.797469] cloud-init[992]: [[0;32m  OK  [0m] Started Initial cloud-init job (metadata service crawler).
-Generating public/private ecdsa key pair.
-[   30.800690] cloud-init[992]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key.
+[   33.807311] cloud-init[665]: Cloud-init v. 22.3.4-0ubuntu1~18.04.1 running 'init' at Thu, 01 Dec 2022 04:02:57 +0000. Up 33.35 seconds.
+[   33.820884] cloud-init[665]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+[   33.832612] cloud-init[665]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+[   33.848377] cloud-init[665]: ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+[   33.851321] cloud-init[665]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+[   33.853963] cloud-init[665]: ci-info: | enp0s3 | True |         10.0.2.15          | 255.255.255.0 | global | 02:1d:bb:88:d1:cb |
+[   33.868716] cloud-init[665]: ci-info: | enp0s3 | True | fe80::1d:bbff:fe88:d1cb/64 |       .       |  link  | 02:1d:bb:88:d1:cb |
+[   33.871306] cloud-init[665]: ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+[   33.884360] cloud-init[665]: ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+[   33.887858] cloud-init[665]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+[   33.891050] cloud-init[665]: ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+[   33.908825] cloud-init[665]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[   33.924404] cloud-init[665]: ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+[   33.941002] cloud-init[665]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[   33.942661] cloud-init[665]: ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |   enp0s3  |   UG  |
+[   33.944887] cloud-init[665]: ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |   enp0s3  |   U   |
+[   33.947837] cloud-init[665]: ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |   enp0s3  |   UH  |
+[   33.950654] cloud-init[665]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[   33.953987] cloud-init[665]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+[   33.956184] cloud-init[665]: ci-info: +-------+-------------+---------+-----------+-------+
+[   33.958388] cloud-init[665]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+[   33.960506] cloud-init[665]: ci-info: +-------+-------------+---------+-----------+-------+
+[   33.962599] cloud-init[665]: ci-info: |   1   |  fe80::/64  |    ::   |   enp0s3  |   U   |
+[   33.964621] cloud-init[665]: ci-info: |   3   |    local    |    ::   |   enp0s3  |   U   |
+[   33.966757] cloud-init[665]: ci-info: |   4   |   ff00::/8  |    ::   |   enp0s3  |   U   |
+[   33.969039] cloud-init[665]: ci-info: +-------+-------------+---------+-----------+-------+
+[[0;32m  OK  [0m] Started Initial cloud-init job (metadata service crawler).
 [[0;32m  OK  [0m] Reached target Network is Online.
-[   30.800844] cloud-init[992]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
-[   30.803906] cloud-init[992]: The key fingerprint is:
-[   30.805116] cloud-init[992]: SHA256:6na/4iOaSNFpfg7smPWqTifvBSGUifAXng/xh2DuiSo root@ubuntu-bionic
-[   30.807166] cloud-init[992]: The key's randomart image is:
-[   30.808678] cloud-init[992]: +---[ECDSA 256]---+
-[   30.825311] cloud-init[992]: |o..o=            |
-[   30.826096] cloud-init[992]: |.oo+ * .         |
-[   30.826849] cloud-init[992]: |  o B o .        |
-[   30.827918] cloud-init[992]: |   * * .         |
-[   30.828982] cloud-init[992]: |  o B . S        |
-         [   30.844411] cloud-init[992]: | . = . .         |
-[   30.844728] cloud-init[992]: |E + * +          |
-[   30.845197] cloud-init[992]: |.o X Oo +        |
-Starting Availability of block devices...
-[   30.845630] cloud-init[992]: | .*oB+++.+o.     |
-[[0;32m  OK  [0m[   30.857498] cloud-init[992]: +----[SHA256]-----+
-[   30.857917] cloud-init[992]: Generating public/private ed25519 key pair.
-[   30.858574] cloud-init[992]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key.
-[   30.859280] cloud-init[992]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub.
-[   30.859767] cloud-init[992]: The key fingerprint is:
-] Reached target Remote File Systems (Pre).
-[   30.860624] cloud-init[992]: SHA256:IenwgI3ENksWgopeuq7zI+WHJwc8+LmwsdhIKEsTZf4 root@ubuntu-bionic
-[   30.860983] cloud-init[992]: The key's randomart image is:
-[   30.861651] cloud-init[992]: +--[ED25519 256]--+
-[   30.862019] cloud-init[992]: |o.o.             |
-[[   30.866784] cloud-init[992]: |.o*+   .         |
-[   30.866933] cloud-init[992]: |o+o=+ o .        |
-[   30.867586] cloud-init[992]: |o =. = . .       |
-[   30.867815] cloud-init[992]: |.+o.  o S        |
-[   30.868767] cloud-init[992]: |oo* .            |
-[0;32m  OK  [0m] Reached target Remote File Systems.
-[   30.868881] cloud-init[992]: |=B.= E           |
-[   30.868967] cloud-init[992]: |BXO +            |
-[   30.869145] cloud-init[992]: |X=+B             |
-[[0;32m  OK  [0m[   30.872669] ] cloud-initReached target Cloud-config availability.[992]: 
-+----[SHA256]-----+
+[[0;32m  OK  [0m] Reached target Remote File Systems (Pre).
+         Mounting /vagrant...
+         Starting Availability of block devices...
 [[0;32m  OK  [0m] Reached target System Initialization.
-[[0;32m  OK  [0m] Started Message of the Day.
-[[0;32m  OK  [0m] Started Daily apt download activities.
-[[0;32m  OK  [0m] Started Daily apt upgrade and clean activities.
-[[0;32m  OK  [0m] Started Discard unused blocks once a week.
-[[0;32m  OK  [0m] Listening on cloud-init hotplug hook socket.
-[[0;32m  OK  [0m] Started ACPI Events Check.
-[[0;32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
-[[0;32m  OK  [0m] Listening on UUID daemon activation socket.
-[[0;32m  OK  [0m] Reached target Paths.
          Starting Socket activation for snappy daemon.
-         Starting LXD - unix socket.
-[[0;32m  OK  [0m] Started Daily Cleanup of Temporary Directories.
-[[0;32m  OK  [0m] Started Ubuntu Advantage Timer for running repeated jobs.
-[[0;32m  OK  [0m] Reached target Timers.
-[[0;32m  OK  [0m] Listening on ACPID Listen Socket.
 [[0;32m  OK  [0m] Listening on Open-iSCSI iscsid Socket.
+[[0;32m  OK  [0m] Listening on cloud-init hotplug hook socket.
+[[0;32m  OK  [0m] Started Daily apt upgrade and clean activities.
+[[0;32m  OK  [0m] Listening on UUID daemon activation socket.
+[[0;32m  OK  [0m] Started Message of the Day.
+[[0;32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Listening on ACPID Listen Socket.
+[[0;32m  OK  [0m] Started Ubuntu Advantage Timer for running repeated jobs.
+         Starting LXD - unix socket.
+[[0;32m  OK  [0m] Started ACPI Events Check.
+[[0;32m  OK  [0m] Reached target Paths.
+[[0;32m  OK  [0m] Started Daily Cleanup of Temporary Directories.
+[[0;32m  OK  [0m] Started Discard unused blocks once a week.
+[[0;32m  OK  [0m] Reached target Timers.
+[[0;32m  OK  [0m] Reached target Cloud-config availability.
+[[0;32m  OK  [0m] Mounted /vagrant.
 [[0;32m  OK  [0m] Started Availability of block devices.
 [[0;32m  OK  [0m] Listening on Socket activation for snappy daemon.
 [[0;32m  OK  [0m] Listening on LXD - unix socket.
 [[0;32m  OK  [0m] Reached target Sockets.
 [[0;32m  OK  [0m] Reached target Basic System.
-         Starting Permit User Sessions...
+         Starting Login Service...
          Starting Dispatcher daemon for systemd-networkd...
-[[0;32m  OK  [0m] Started FUSE filesystem for LXC.
-[[0;32m  OK  [0m] Reached target Login Prompts (Pre).
+         Starting Virtualbox guest utils...
+[[0;32m  OK  [0m] Started Regular background program processing daemon.
          Starting LSB: Record successful boot for GRUB...
 [[0;32m  OK  [0m] Started D-Bus System Message Bus.
-         Starting Virtualbox guest utils...
-         Starting Pollinate to seed the pseudo random number generator...
-[[0;32m  OK  [0m] Started irqbalance daemon.
-[[0;32m  OK  [0m] Started Regular background program processing daemon.
-         Starting LSB: automatic crash report generation...
-         Starting Accounts Service...
-         Starting System Logging Service...
-[[0;32m  OK  [0m] Started Deferred execution scheduler.
-         Starting Login Service...
+[[0;32m  OK  [0m] Started Login Service.
          Starting LXD - container startup/shutdown...
+[[0;32m  OK  [0m] Started Deferred execution scheduler.
+         Starting Message of the Day...
+[[0;32m  OK  [0m] Reached target Login Prompts (Pre).
+         Starting System Logging Service...
+         Starting Pollinate to seed the pseudo random number generator...
+         Starting Accounts Service...
+[[0;32m  OK  [0m] Started irqbalance daemon.
+[[0;32m  OK  [0m] Started Unattended Upgrades Shutdown.
+[[0;32m  OK  [0m] Started FUSE filesystem for LXC.
          Starting Snap Daemon...
-[[0;32m  OK  [0m] Started Permit User Sessions.
-         Starting Hold until boot process finishes up...
-         Starting Terminate Plymouth Boot Screen...
-[[0;32m  OK  [0m] Started Hold until boot process finishes up.
-         Starting Set console scheme...
-[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
-[[0;32m  OK  [0m] Started Terminate Plymouth Boot Screen.
-[[0;32m  OK  [0m] Started Dispatcher daemon for systemd-networkd.
+[[0;32m  OK  [0m] Reached target Remote File Systems.
+         Starting Permit User Sessions...
+         Starting LSB: automatic crash report generation...
 [[0;32m  OK  [0m] Started System Logging Service.
+[[0;32m  OK  [0m] Started Permit User Sessions.
+         Starting Terminate Plymouth Boot Screen...
+         Starting Hold until boot process finishes up...
+         Starting Authorization Manager...
+[[0;32m  OK  [0m] Started Terminate Plymouth Boot Screen.
+[[0;32m  OK  [0m] Started Hold until boot process finishes up.
+[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
+         Starting Set console scheme...
 [[0;32m  OK  [0m] Started Set console scheme.
-[[0;32m  OK  [0m] Started LSB: automatic crash report generation.
 [[0;32m  OK  [0m] Created slice system-getty.slice.
 [[0;32m  OK  [0m] Started Getty on tty1.
 [[0;32m  OK  [0m] Reached target Login Prompts.
-[[0;32m  OK  [0m] Started Login Service.
-[[0;32m  OK  [0m] Started Unattended Upgrades Shutdown.
-         Starting Authorization Manager...
 [[0;32m  OK  [0m] Started LSB: Record successful boot for GRUB.
-[[0;32m  OK  [0m] Started Virtualbox guest utils.
+[[0;32m  OK  [0m] Started LSB: automatic crash report generation.
 [[0;32m  OK  [0m] Started Authorization Manager.
 [[0;32m  OK  [0m] Started Accounts Service.
+[[0;32m  OK  [0m] Started Virtualbox guest utils.
+[[0;32m  OK  [0m] Started Dispatcher daemon for systemd-networkd.
+[[0;32m  OK  [0m] Started LXD - container startup/shutdown.
+[[0;32m  OK  [0m] Started Snap Daemon.
+         Starting Wait until snapd is fully seeded...
+         Starting Time & Date Service...
+[[0;32m  OK  [0m] Started Time & Date Service.
+[[0;32m  OK  [0m] Started Wait until snapd is fully seeded.
+         Starting Apply the settings specified in cloud-config...
+[   39.559489] cloud-init[1213]: Cloud-init v. 22.3.4-0ubuntu1~18.04.1 running 'modules:config' at Thu, 01 Dec 2022 04:03:03 +0000. Up 39.28 seconds.
+[[0;32m  OK  [0m] Started Apply the settings specified in cloud-config.
 
 Ubuntu 18.04.6 LTS ubuntu-bionic ttyS0
 
-ubuntu-bionic login: [   42.206879] cloud-init[1582]: Cloud-init v. 22.3.4-0ubuntu1~18.04.1 running 'modules:config' at Mon, 28 Nov 2022 09:04:14 +0000. Up 40.86 seconds.
-ci-info: no authorized SSH keys fingerprints found for user ubuntu.
-<14>Nov 28 09:04:22 cloud-init: #############################################################
-<14>Nov 28 09:04:22 cloud-init: -----BEGIN SSH HOST KEY FINGERPRINTS-----
-<14>Nov 28 09:04:22 cloud-init: 1024 SHA256:hFSbFXITT4hSNZCisa23vwFtXeueuQXvYGeH9VSMIMM root@ubuntu-bionic (DSA)
-<14>Nov 28 09:04:22 cloud-init: 256 SHA256:6na/4iOaSNFpfg7smPWqTifvBSGUifAXng/xh2DuiSo root@ubuntu-bionic (ECDSA)
-<14>Nov 28 09:04:22 cloud-init: 256 SHA256:IenwgI3ENksWgopeuq7zI+WHJwc8+LmwsdhIKEsTZf4 root@ubuntu-bionic (ED25519)
-<14>Nov 28 09:04:22 cloud-init: 2048 SHA256:paHOO01VE1kJKSPyyUqRxViotojTr54RBqOT88QomH4 root@ubuntu-bionic (RSA)
-<14>Nov 28 09:04:22 cloud-init: -----END SSH HOST KEY FINGERPRINTS-----
-<14>Nov 28 09:04:22 cloud-init: #############################################################
------BEGIN SSH HOST KEY KEYS-----
-ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIKOWYBr/Cm1TnON46Wzg3ZydTYeuX4NrlZ9uvbRpm3ajvqjwXfcCHRnz6LJQr3zx32yl6VrXAEbHUKtbu6SaUY= root@ubuntu-bionic
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjMO6qo6lb9trnorFoHHJ/16YUegNqrDgNJ6ZWcvZCJ root@ubuntu-bionic
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKmc0JAd9zrJ3fkAiXLL3kZIIzC8gs67r/yZ2mTNNGfL2MHuiYEQZs6NWgqYsbamLukQXg99dYqamkRP/6fT5yQ16SyRgV+6JQf2iFFQfgffMyBjVGI2rrdzYSIBHnWwkwOH+ob7E+/aShkgI7/64gHnYvRIOdh+cJpe3ITLM1BM7x6KV2cjwnAu6dSP+k1RQEt6xtWWbmqgJr+5gaIQ3hE8wvaENcXWJ8QXSH6HMPfYJq6x06MR8m063+ZzezdBFsJKGTaZXHakm0ihuGbtLfgRJvdm8v98/x33L1hMSZjfGH5qoFtM4Uk9fv7Mcww6x+4Hz3piIubMkpOp3RiQ87 root@ubuntu-bionic
------END SSH HOST KEY KEYS-----
-[   48.565896] cloud-init[1678]: Cloud-init v. 22.3.4-0ubuntu1~18.04.1 running 'modules:final' at Mon, 28 Nov 2022 09:04:21 +0000. Up 47.60 seconds.
-[   48.569063] cloud-init[1678]: Cloud-init v. 22.3.4-0ubuntu1~18.04.1 finished at Mon, 28 Nov 2022 09:04:22 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 48.54 seconds
+ubuntu-bionic login: [   49.485385] cloud-init[1334]: Cloud-init v. 22.3.4-0ubuntu1~18.04.1 running 'modules:final' at Thu, 01 Dec 2022 04:03:12 +0000. Up 48.79 seconds.
+[   49.485674] cloud-init[1334]: Cloud-init v. 22.3.4-0ubuntu1~18.04.1 finished at Thu, 01 Dec 2022 04:03:13 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 49.44 seconds
+
